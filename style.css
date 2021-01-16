@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgb(74, 179, 117);
+    color: rgb(210, 255, 9);
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 1em;
+}
+
+.container nav{
+    height: 50px;
+    background-color: rgb(74, 179, 117);
+}
+
+nav button{
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.page{
+    min-height: calc(100vh - 100px);
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1{
+    margin-top: 20px;
+}
+
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(74, 179, 117);
+}
+
+#profile_page{
+    background-color: 	#54271A
+}
+
+#adventure_page{
+    background-color: rgb(74, 179, 117);
+    display: none;
+}
+
+#profile_pics{
+    width: 200px;
+    height: 300px;
+    margin-left: calc(50% - 100px);
+}
+
+#adventure_page button{
+    max-width: 500px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#adventure_page button:hover{
+    background-color: white;
+    font-weight: bold;
+}
+#exitpic{
+    width: 620px;
+    height: 412px;
+    margin-left: calc(50% - 100px);
+    float: left;
+
+}
+#exitpage{
+    margin:auto;
+}
+#textt{
+    float:right;
+
+}

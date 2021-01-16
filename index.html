@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>RolePlayGame</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+        <nav class="mynavbar">
+            <button id="character_btn" onclick="switch_to_profile()">Karakterem</button>
+            <button id="adventure_btn" onclick="switch_to_adventure()">Kalandok</button>
+
+            <button id="lvlupbtn" onclick="lvl_up()">LvlUP</button>
+        </nav>
+
+        <div id="profile_page" class="page">
+            <div class="row">
+                <div class="col-md-4 pics_holder">
+                    <img src="pics/favagooo.jpg" id="profile_pics">
+                </div>
+                <div class="col-md-8">
+                    
+                    <h1>Kiss János favágó</h1>
+                    <h3 id="role"></h3>
+                    <p id="description"></p>
+                    <ul>
+                        <li>Élet: <b id="profile_life"></b> </li>
+                        <li>Erő: <b id="profile_strength"></b> <button onclick="update_strength()" class="addButtons">+</button> </li>
+                        <li>Kitartás: <b id="profile_endurance"></b> <button onclick="update_endurance()" class="addButtons">+</button></li>
+                        <li>Védekezés: <b id="profile_deffense"></b> <button onclick="update_deffense()" class="addButtons">+</button></li>
+                        <li>Tapasztalat: <b id="profile_experience"></b> (szintlépés: <b id="next_lvl"></b>)</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="adventure_page" class="page">
+            <div id="story"></div>
+            <button onclick="kaszalas()">Elmegyek kaszálni!</button>
+        </div>
+
+        <div id="exitpage" class="page">
+            <img src="pics/1234.jpg" id=exitpic>
+            <h3>Köszönöm hogy játszottál! Mihamarabb visszavárlak!</h3>
+            <h4>Értékeld a játékom:</h4>
+            <ul>
+                <li><input type="radio" value="5" name="ert"  checked> <label for="5">5</label></li>
+                <li><input type="radio" value="4" name="ert"> <label for="4">4</label></li>
+                <li><input type="radio" value="3" name="ert"> <label for="3">3</label></li>
+                <li><input type="radio" value="2" name="ert"> <label for="2">2</label></li>
+                <li><input type="radio" value="1" name="ert"> <label for="1">1</label></li>
+            </ul>
+            <button><a href="https://dszc-mechwart.e-kreta.hu/Adminisztracio/Login" target="_blank">Az 5-ösön hagytam. Írom is a Krétába!</a></button>
+            
+        </div>
+
+        <div class="footer">
+            <button id="exit_btn" onclick="switch_to_exitpage()">Kilépés/Profilváltás</button>
+            <button id="re_btn" onclick="switch_to_profile()">Nem birom ki! Játszok tovább!!!</button>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="spa.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
